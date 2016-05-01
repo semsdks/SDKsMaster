@@ -1,0 +1,14 @@
+body {
+	background-color:#fff;
+}
+
+.container {
+	margin:0 auto;
+	width:880px;
+	text-align:left;
+}
+
+.cell {
+	border-style:none;
+	color:#0066FF;
+}

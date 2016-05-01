@@ -43,7 +43,7 @@ function checkStatus() {
 				}
 
 				if (results['status'] === 'Correct') {
-					win()
+				    success()
 				}
 			};
 		},
@@ -51,6 +51,7 @@ function checkStatus() {
 			console.log(error)
 		}
 	});
+
 };
 
 

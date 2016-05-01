@@ -10,10 +10,10 @@ function updateCellValue(cell_id, value) {
 			url: "/modify",
 			data : { 'id': cell_id, 'value': value },
 			success: function(results) {
-				console.log(results);
+				//console.log(results);
 			},
 			error: function(error) {
-				console.log(error)
+			//	console.log(error)
 			}
 		});
 	};
@@ -25,7 +25,7 @@ function checkStatus() {
 		url: "/status",
 		data : {},
 		success: function(results) {
-			console.log(results);
+			//console.log(results);
 			status_map = results['status_map']
 			for (cell in status_map) {
 				current_cell = status_map[cell]
@@ -48,19 +48,7 @@ function checkStatus() {
 			};
 		},
 		error: function(error) {
-			console.log(error)
+			//console.log(error)
 		}
 	});
 };
-
-
-$(document).ready(function() {
-
-	$('.wp1').waypoint(function() {
-		$('.wp1').addClass('animated fadeInLeft');
-	}, {
-		offset: '75%'
-	});
-
-
-});
